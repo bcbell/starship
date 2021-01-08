@@ -18,7 +18,7 @@
   justify-content: center;
   font-size: calc(20px + 2vmin);
 }
-
+/* Notes for spinning */
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -34,7 +34,6 @@ body {
   background-size: cover;
   color: white;
 }
-
 .App-link {
   text-align: center;
   font-family: 'Delius Unicase', cursive;
@@ -51,6 +50,10 @@ body {
   color: #0c164f;
   text-align: center;
   margin-top: 30px;
+  box-shadow: 0 0 5px 5px gray;
+  cursor: pointer;
+  display: inline-block;
+  
 }
 
 a{
@@ -64,9 +67,12 @@ a{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   border-radius: 25px;
-  box-shadow: #0c164f 2px;
+  box-shadow: 0 0 5px 5px gray;
+  cursor: pointer;
+  text-align: center;
+  align-content: center;
 }
 @keyframes App-logo-spin {
   from {
