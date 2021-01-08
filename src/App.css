@@ -1,33 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap');
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 5vmin;
   pointer-events: none;
+  font-family: 'Lakki Reddy', cursive;
+  color: rgba(255, 255, 255, 0.655); background-image: linear-gradient(to left bottom, #0c164f, #131f6ed1, #1e278ebe, #2c30aea9, #3c39d0cb, #6434d2b1, #802ed39e, #9b24d2c3, #b006b3a7, #bc0096a5, #be047d95, #ba1e67b0);
+  padding: 50px;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(20px + 2vmin);
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-header {
+body {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: url(https://i.imgur.com/5oiXQ9Z.png); 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   color: white;
 }
 
 .App-link {
-  color: #61dafb;
+  text-align: center;
+  font-family: 'Delius Unicase', cursive;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.details{
+  background-color: #61dafb;
+  padding: 15px;
+  border-radius: 25px;
+  font-family: 'Delius Unicase', cursive;
+  color: #0c164f;
+  text-align: center;
+  margin-top: 30px;
 }
 
+a{
+  color: rgb(159, 126, 223);
+}
+
+.starship{
+  border: #0c164f 2px solid;
+  background-color: #61dafb;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-radius: 25px;
+  box-shadow: #0c164f 2px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

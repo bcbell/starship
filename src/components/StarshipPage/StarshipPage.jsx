@@ -15,14 +15,14 @@ class Starship extends Component {
     }
     render() { 
         return ( 
-            <div>
-            <h1>Starwars Starships</h1>
+            <div >
+            <h1 class="App-logo">Starwars Starships</h1>
             
             {this.state.results.length> 0 ? (
-            <div>
+            <div class='App-link'>
                 {this.state.results.map((starships)=>(
-                    <div key={starships.index}>
-                        <Link
+                    <div   key={starships.index}>
+                        <Link class='starship' style={{ width: "100px", height: "100px" }}
                         to={{
                             pathname:'/starship',
                             state:{starships},

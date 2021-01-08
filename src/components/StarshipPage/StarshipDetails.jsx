@@ -16,7 +16,7 @@ class StarshipDetails extends Component {
     render() { 
         const {starshipDetails} =this.state
         return (
-            <div>
+            <div class='details'>
             {starshipDetails.name ? (
               <>
                 <h2>Name: {starshipDetails.name}</h2>
