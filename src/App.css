@@ -41,6 +41,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding: 10px;
 }
 .details{
   background-color: #61dafb;
@@ -60,7 +61,7 @@ a{
   color: rgb(159, 126, 223);
 }
 
-.starship{
+#starship{
   border: #0c164f 2px solid;
   background-color: #61dafb;
   padding: 10px;
@@ -71,14 +72,16 @@ a{
   border-radius: 25px;
   box-shadow: 0 0 5px 5px gray;
   cursor: pointer;
-  text-align: center;
-  align-content: center;
 }
-@keyframes App-logo-spin {
+.card{
+  text-align: center;
+}
+
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */

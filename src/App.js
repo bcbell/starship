@@ -6,6 +6,7 @@ import {Route} from 'react-router-dom'
 function App() {
   return (
     <>
+    <div class="App-logo" style={{textAlign: 'center'}}> Star Wars Starships </div>
       <Route exact path='/'render={()=><StarshipPage/>}/>
       <Route exact path='/starship' render={({location})=><StarshipDetails location={location}/>}/>
     </>

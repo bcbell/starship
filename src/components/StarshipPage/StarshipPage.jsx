@@ -16,24 +16,30 @@ class Starship extends Component {
     render() { 
         return ( 
             <div >
-            <h1 class="App-logo">Starwars Starships</h1>
             
+        
             {this.state.results.length> 0 ? (
             <div class='App-link'>
                 {this.state.results.map((starships)=>(
-                    <div   key={starships.index}>
-                        <Link class='starship' style={{ width: "100px", height: "100px" }}
+                    <div id='starship' key={starships.index} class="card text-center m-3">
+                    <div class="card-body text-center m-3" >
+                        <Link  class='cards'
                         to={{
                             pathname:'/starship',
                             state:{starships},
                         }}>
+                            
                             {starships.name}
                         </Link>
 
                         </div>
+                    
+                       </div> 
                 ))}
+                
             </div>
              ) :(
+            
             <>
                         <p>Loading starship details</p>
             </>
